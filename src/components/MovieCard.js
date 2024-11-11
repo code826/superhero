@@ -13,12 +13,6 @@ class MovieCard extends Component{
         super(props);
     }
 
-    
-    handleFavBtn = () =>{
-        this.setState({
-            isFav:!this.state.isFav
-        });
-    }
     render(){
         console.log('render moviecard');
         console.log("rendering !!",this.props);
@@ -41,7 +35,9 @@ class MovieCard extends Component{
                         this.props.decreaseStar(id);
                     }}><img  className="img" src="https://cdn-icons-png.flaticon.com/128/11047/11047899.png"/></MovieCardBtn>
                     {/* {isFav ?<button id="unfav-btn">Remove From Fav</button>:<button id="fav-btn">Add To Fav</button> } */}
-                    <MovieCardBtn onClick={this.handleFavBtn} id = {isFav?"unfav-btn":"fav-btn"}>{isFav?"Remove From Fav":"Add To Fav"}</MovieCardBtn>
+                    <MovieCardBtn onClick={() => {
+                        this.props.handleFavBtn(id);
+                    }} id = {isFav?"unfav-btn":"fav-btn"}>{isFav?"Remove From Fav":"Add To Fav"}</MovieCardBtn>
                 </div>
                 
 

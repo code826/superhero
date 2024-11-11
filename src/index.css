@@ -127,3 +127,11 @@ nav{
 .navbar-header{
   color: red;
 }
+
+nav{
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
