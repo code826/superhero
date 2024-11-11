@@ -1,0 +1,37 @@
+styling
+
+1. CSS stylesheet
+2. Inline style
+3. CSS modules
+4. Styled Component
+
+
+1. CSS stylesheet
+ : seperate one file for css 
+ simple to know megere my style is ( easy to cache)
+  too much line of code , global scope
+
+2. Inline : 
+    style={{color:"red"}}
+    red --> "red",
+    : for testing
+reusability , browser , few css properties can't be implemented
+
+3 .Styled Component
+ css in js 
+ dynamic css property with use of props 
+  : differetiate b/w styled compoenent and React compoenent
+  : because we are using JS in css so we need to evalaute the expression then assign it to CSS , it will slow down performance
+  : same file contains css and js
+
+4. CSS modules 
+  end file with name .module.css 
+  class and id 
+  which file need import style from "../file.module.css";
+  className = {style.header}
+
+  advantage 
+   local scope
+
+
+   

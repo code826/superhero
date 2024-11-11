@@ -1,0 +1,40 @@
+// component -> small chhunk of code , we reuse it 
+
+// component ----> function , class
+
+//state --> built in object of react to store data of the component
+
+state which store data for component
+ create state 
+ inside constructor 
+    this.state = {
+        
+    }
+
+    //update it 
+     // first 
+        this.setState({
+            key:'mdsvvj'
+        });
+
+        this.setState((prevState)=>{
+            return{
+                key:prevState.key+1
+            }
+        });
+
+
+        P -->(props) C (state props)
+
+
+       var state = {
+
+       } 
+       // new state 
+
+       var 
+
+       ... spread operartor
+       var arr = [
+        
+       ]
